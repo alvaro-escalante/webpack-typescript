@@ -1,0 +1,83 @@
+// Page
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: 'Nunito';
+	font-size: 100%;
+	color: #333;
+	background-color: #fff;
+	line-height: 1.3;
+}
+
+.image {
+	background: url('../images/webpack.png') no-repeat center / auto 100%;
+	height: 100px;
+	margin-bottom: 1em;
+}
+
+
+h6 span {
+	@include fontsize(50);
+	display: block;
+	margin: 1em 0;
+}
+
+main {
+	margin-top: 2em;	
+	.text {
+		padding: 1rem;
+		max-width: 59%;
+		margin: 0 auto;
+	}
+}
+
+footer {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 100%;
+}
+
+.logo-appear {
+  transition: transform 1s ease;
+	transform: scale(0.4);
+	opacity: 0.1;
+}
+
+.logo-appear-active  {
+	transform: scale(1);
+	opacity: 1;
+}
+
+@keyframes FadeIn { 
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+.list li {
+	opacity: 0;
+	animation: FadeIn 0.3s linear;
+	animation-fill-mode: both;
+	animation-delay: 1s;
+}
+
+@for $i from 1 through 6 {
+	.list li:nth-child(#{$i}) { animation-delay: #{$i * 0.4}s }
+}
+
+.sharelinks {
+	display: flex;
+	justify-content: space-around;
+	max-width: 250px;
+	margin: 3em auto 0;
+	width: 100%;
+	.social{
+		@include fontsize(50);
+		color: #142c56;
+		transition: opacity 0.4s ease;
+		&:hover { opacity: 0.8 }
+	}
+
+}

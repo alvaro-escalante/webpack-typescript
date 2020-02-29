@@ -1,0 +1,15 @@
+// Main sass file
+
+// Core variables and mixins
+@import 'partials/variables';
+@import 'partials/mixins';
+
+// Core styles
+@import 'partials/reset';
+@import 'partials/type';
+@import 'partials/grid';
+
+// Page elements
+@import 'partials/page';
+
+

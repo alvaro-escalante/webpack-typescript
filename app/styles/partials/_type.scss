@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'social';
+  src: 
+    url('../fonts/social.ttf') format('truetype'),
+    url('../fonts/social.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.social {
+  cursor: pointer;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'social' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:#333;
+  transition: color 0.3s ease;
+  &:hover {
+    color: #1c78c0;
+  }
+}
+
+.icon-github:before  { content: '\eab0' }
+
+// TYPE
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  display: block;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1 { 
+  transition: font-size 1s ease;
+  @include fontsize(30); 
+  @include mobile { @include fontsize(40) }
+  span {
+    display: none;
+    @media (min-width: 384px) { display: inline }
+  }
+} 
+
+h2 { 
+  @include fontsize(24) 
+} 
+
+h4 {
+  margin-bottom: 2em;
+}
+
+h3 { @include fontsize(22) } 
+h4 { @include fontsize(20) } 
+h5 { @include fontsize(18) } 
+h6 { @include fontsize(13) }
+
+a {
+  text-decoration: none;
+  &:hover { text-decoration: none }
+  &:focus { outline: none }
+}
+
+ul {
+  
+  margin: 0.5em 0 0 1.5em;
+  li {
+    padding-bottom: 1em;
+    list-style: square;
+  }
+}
+
+
+dl.standard {
+  margin-bottom: 0.5em;
+  dt { font-weight: bold  }
+  dd {  padding: 0 0 0.5em 1em }
+}
+
+p {
+  @include fontsize(17);
+  margin: 1em auto 0;
+  padding: 0 0 0.75em 0;
+}
+
+small, .small { font-size: 90% }
+
+hr {
+  height: 1px;
+  margin: 0 0 0.5em 0;
+  border: 0;
+  border-top: solid 1px #E7E7E7;
+  clear: both;
+}
+
+code {
+  padding: 0 0.3em;
+  font-size: 1.2em;
+}
