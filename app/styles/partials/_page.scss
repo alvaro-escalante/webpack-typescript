@@ -63,7 +63,7 @@ footer {
 	animation-delay: 1s;
 }
 
-@for $i from 1 through 6 {
+@for $i from 1 through 7 {
 	.list li:nth-child(#{$i}) { animation-delay: #{$i * 0.4}s }
 }
 

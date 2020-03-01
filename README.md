@@ -3,7 +3,7 @@
   <img height="100" src="https://cdn.rawgit.com/webpack/media/e7485eb2/logo/icon-square-big.svg">
   <img height="100" vspace='20' hspace='5' src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png">
   <img height="100" vspace='20' src="https://i0.wp.com/blog.alexdevero.com/wp-content/uploads/2015/03/sass-logo.jpg">
-  <h1>React, Webpack, Typescript & Sass Boilerplate</h1>
+  <h1>React, Webpack, Typescript, Jest & Sass Boilerplate</h1>
 </div>
 
 ## Install

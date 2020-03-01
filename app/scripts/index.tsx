@@ -14,7 +14,8 @@ const App = () => {
     'Scss Grid generator',
     'Image Optimization',
     'React CSS Transitions',
-    'React Hooks'
+    'React Hooks',
+    'Jest Testing'
   ]
 
   useEffect(() => {
